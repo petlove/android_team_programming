@@ -6,6 +6,7 @@ O que queremos validar?
     - shared view model
     - activity result API
     - ?
+- Animar transições
 
 Quais alternativas nós temos?
 
