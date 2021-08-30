@@ -12,7 +12,7 @@ class FragmentA : Fragment(R.layout.fragment_a) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val binding = FragmentABinding.bind(view)
         binding.button.setOnClickListener {
-            view.findNavController().navigate(R.id.action_fragmentA_to_nav_graph)
+            view.findNavController().navigate(R.id.action_fragmentA_to_logout_graph)
         }
     }
 }

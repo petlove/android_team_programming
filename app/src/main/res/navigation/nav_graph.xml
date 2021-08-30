@@ -2,10 +2,12 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
+    android:id="@+id/app_graph"
     app:startDestination="@id/fragmentA">
 
-    <include app:graph="@navigation/logout_nav_graph" />
+    <include
+        app:graph="@navigation/logout_nav_graph"
+        tools:layout="@layout/fragment_logout" />
 
     <fragment
         android:id="@+id/fragmentA"
@@ -16,8 +18,8 @@
             android:id="@+id/action_fragmentA_to_fragmentB"
             app:destination="@id/fragmentB" />
         <action
-            android:id="@+id/action_fragmentA_to_nav_graph"
-            app:destination="@id/logout_nav_graph" />
+            android:id="@+id/action_fragmentA_to_logout_graph"
+            app:destination="@id/logout_graph" />
     </fragment>
 
     <fragment
