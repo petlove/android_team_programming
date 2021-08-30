@@ -8,3 +8,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "AndroidTeamProgramming"
 include ':app'
+include ':logout'
+include ':storage'
