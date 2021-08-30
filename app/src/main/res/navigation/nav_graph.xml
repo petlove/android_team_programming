@@ -5,6 +5,8 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/fragmentA">
 
+    <include app:graph="@navigation/logout_nav_graph" />
+
     <fragment
         android:id="@+id/fragmentA"
         android:name="br.com.petlove.androidteamprogramming.navigation.FragmentA"
@@ -13,6 +15,9 @@
         <action
             android:id="@+id/action_fragmentA_to_fragmentB"
             app:destination="@id/fragmentB" />
+        <action
+            android:id="@+id/action_fragmentA_to_nav_graph"
+            app:destination="@id/logout_nav_graph" />
     </fragment>
 
     <fragment
