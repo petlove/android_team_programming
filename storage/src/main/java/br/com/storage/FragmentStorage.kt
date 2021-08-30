@@ -5,7 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import br.com.storage.databinding.FragmentStorageBinding
 
-class FragmentStorage : Fragment() {
+class FragmentStorage : Fragment(R.layout.fragment_storage) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val binding = FragmentStorageBinding.bind(view)

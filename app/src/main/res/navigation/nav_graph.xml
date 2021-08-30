@@ -6,8 +6,10 @@
     app:startDestination="@id/fragmentA">
 
     <include
-        app:graph="@navigation/logout_nav_graph"
-        tools:layout="@layout/fragment_logout" />
+        app:graph="@navigation/logout_nav_graph" />
+
+    <include
+        app:graph="@navigation/storage_nav_graph" />
 
     <fragment
         android:id="@+id/fragmentA"

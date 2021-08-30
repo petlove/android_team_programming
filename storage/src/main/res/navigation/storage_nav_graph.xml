@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentStorage"
+    android:id="@+id/storage_graph">
+
+    <fragment
+        android:id="@+id/fragmentStorage"
+        android:name="br.com.storage.FragmentStorage"
+        android:label="Fragment Storage"
+        tools:layout="@layout/fragment_storage">
+
+        <deepLink
+            app:uri="android-app://team.programming.app/fragment_storage"/>
+    </fragment>
+
+</navigation>
